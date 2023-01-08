@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    padding: 5%;  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+}
+
+.container form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.container form input[type=submit]{
+    padding: 5px;
+}
+
+.container form input[type=text]{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+/* Styling posts */
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.posts p{
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
