@@ -48,7 +48,11 @@ function testAddFeed(){
 
 postCollector.addEventListener(
     'submit', (event)=>{
-        // event.preventDefault()
+        event.preventDefault()
+        // use "event.preventDefault()" to stop the page from reloading 
+        // it actually does not send the data back to server it stores it in the local browser 
+        // call "event.submit()" or form.submit() to send data to server 
+        // since this is only a demo for frontend it is not required to handle data 
         let post = postCollector.elements['post'].value
         addPostToFeed(post)
     }
